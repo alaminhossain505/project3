@@ -1,0 +1,1178 @@
+:root {
+    --hf: 'Raleway', sans-serif;
+    --pf: 'Open Sans', sans-serif;
+    --hc: #353535;
+    --pc: #555555;
+    --hvc: #744fa0;
+    --bc: #f1f1f1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+.clr {
+    clear: both;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.full-wrapper .container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*common css end*/
+
+.mx-30 {
+    margin: 0 30px;
+}
+
+/*speace css end*/
+
+.sub-heading {
+    text-align: center;
+}
+
+.sub-heading h3 {
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--hc);
+    text-transform: uppercase;
+
+}
+
+.sub-heading .about-line {
+    padding-top: 15px;
+
+}
+
+.sub-heading .about-line .m-line {
+    position: relative;
+}
+
+.sub-heading .about-line .m-line .main-line-1 .line-1 span {
+    width: 44px;
+    height: 1px;
+    background: var(--hc);
+    display: inline-block;
+    position: absolute;
+    left: 46.4%;
+}
+
+.sub-heading .about-line .m-line .main-line-1 .line-2 span {
+    width: 49px;
+    height: 1px;
+    background: var(--hc);
+    display: inline-block;
+    position: absolute;
+    left: 46.1%;
+    top: 3px;
+}
+
+.sub-heading .about-line .m-line .icon i {
+    transform: rotate(-45deg);
+    position: absolute;
+    color: var(--hc);
+    left: 49.6%;
+    top: -2px;
+}
+
+.sub-heading .about-line .m-line .main-line-2 .line-1 span {
+    width: 44px;
+    height: 1px;
+    background: var(--hc);
+    display: inline-block;
+    position: absolute;
+    right: 46.4%;
+}
+
+.sub-heading .about-line .m-line .main-line-2 .line-2 span {
+    width: 49px;
+    height: 1px;
+    background: var(--hc);
+    display: inline-block;
+    position: absolute;
+    right: 46.1%;
+    top: 3px;
+}
+
+/*sub-heading css end here*/
+
+
+.banner-bg {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+.banner-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.banner-bg .banner {
+    position: relative;
+}
+
+.banner-bg .banner .in {
+    position: absolute;
+    left: -120px;
+    bottom: 30px;
+    z-index: -2;
+}
+
+.banner-bg .banner .r-icon {
+    position: absolute;
+    top: 50%;
+    right: -330px;
+    transform: translateY(-50%);
+}
+
+.banner-bg .banner .r-icon i {
+    color: #fff;
+    padding-top: 25px;
+    transition: all linear 0.3s;
+}
+
+.banner-bg .banner .r-icon i:hover {
+    color: var(--hvc);
+
+}
+
+.banner-bg .banner .banner-img {
+    width: 229px;
+    padding-top: 60px;
+    float: left;
+    padding-bottom: 95px;
+}
+
+.banner-bg .banner .banner-img img {
+    width: 100%;
+}
+
+.banner-bg .banner .banner-menu {
+    width: 941px;
+    float: left;
+}
+
+.banner-bg .banner .banner-menu ul {
+    float: right;
+}
+
+.banner-bg .banner .banner-menu ul li {
+    float: left;
+}
+
+.banner-bg .banner .banner-menu ul li:first-of-type a {
+    color: #744fa0;
+}
+
+.banner-bg .banner .banner-menu ul li .line {
+    width: 15px;
+    height: 1px;
+    background: #744fa0;
+    display: block;
+    margin-top: 5px;
+    margin-left: 22px;
+
+}
+
+.banner-bg .banner .banner-menu ul li a {
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    padding-left: 11px;
+    padding-right: 11px;
+    transition: all linear 0.5s;
+    border-radius: 3px;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-top: 80px;
+}
+
+.banner-bg .banner .banner-menu ul li:hover a {
+    background: var(--hvc);
+    color: #fff;
+}
+
+.banner-bg .banner .banner-text {
+    text-align: right;
+}
+
+.banner-bg .banner .banner-text h3 {
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-bg .banner .banner-text h3::first-letter {
+    color: #744fa0;
+}
+
+.banner-bg .banner .banner-text h4 {
+    font-family: var(--hf);
+    font-weight: 300;
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.banner-bg .banner .banner-text .m-line {
+    width: 200px;
+    height: 1px;
+    background: #fff;
+    margin-left: 970px;
+    margin-bottom: 20px;
+}
+
+.banner-bg .banner .banner-text p {
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    padding-left: 700px;
+    padding-bottom: 57px;
+}
+
+.banner-bg .banner .banner-text a {
+    display: inline-block;
+    color: var(--hc);
+    background: #fff;
+    border-radius: 5px;
+    transition: all linear 0.3s;
+    margin-bottom: 130px;
+}
+
+.banner-bg .banner .banner-text a:last-child {
+    margin-left: 5px;
+}
+
+.banner-bg .banner .banner-text a:hover {
+    background: var(--hvc);
+    color: #fff;
+}
+
+
+
+.banner-bg .banner .banner-text a i {
+    display: inline-block;
+    font-size: 33px;
+    margin-left: 26px;
+}
+
+.banner-bg .banner .banner-text a .b-detail {
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+.banner-bg .banner .banner-text a .b-detail h6 {
+    font-family: var(--pf);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.banner-bg .banner .banner-text a .b-detail h5 {
+    font-family: var(--hf);
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/*banner css end here*/
+
+.about-bg {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.about-bg .about .about-content .about-text {
+    width: 570px;
+    float: left;
+    margin-right: 130px;
+    padding-top: 70px;
+}
+
+
+.about-bg .about .about-content .about-text .sub-heading .main-line-1 .line-1 span {
+    left: 40%;
+}
+
+.about-bg .about .about-content .about-text .sub-heading .main-line-1 .line-2 span {
+    left: 39.1%;
+}
+
+.about-bg .about .about-content .about-text .sub-heading .main-line-2 .line-1 span {
+    right: 40%;
+}
+
+.about-bg .about .about-content .about-text .sub-heading .main-line-2 .line-2 span {
+    right: 39.1%;
+}
+
+.about-bg .about .about-content .about-text .sub-heading i {
+    left: 48.6%;
+}
+
+.about-bg .about .about-content .about-text p {
+    text-align: center;
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pc);
+    line-height: 20px;
+}
+
+.about-bg .about .about-content .about-text p:first-of-type {
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+
+.about-bg .about .about-conten .about-img {
+    width: 370px;
+    float: left;
+}
+
+.about-bg .about .about-conten .about-img img {
+    width: 100%;
+}
+
+/*about css end here*/
+
+.feature-bg {
+    background: var(--bc);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+
+.feature-bg .feature .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.feature-bg .feature .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.feature-bg .feature .sub-heading .main-line-2 .line-1 span {
+    right: 45%;
+}
+
+.feature-bg .feature .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.feature-bg .feature .sub-heading i {
+    left: 49.4%;
+}
+
+.feature-bg .feature .feture-social {
+    width: 370px;
+    float: left;
+    padding-top: 30px;
+}
+
+
+.feature-bg .feature .feture-social ul li a {
+    color: var(--hc);
+    transition: all linear 0.3s;
+}
+
+.feature-bg .feature .feture-social ul li:hover a {
+    color: var(--hvc);
+}
+
+
+.feature-bg .feature .feture-social ul li a i {
+    display: inline-block;
+    font-size: 42px;
+    padding-right: 6px;
+}
+
+.feature-bg .feature .feture-social ul li a .s-detail {
+    display: inline-block;
+}
+
+.feature-bg .feature .feture-social ul li a .s-detail h6 {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--pf);
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+.feature-bg .feature .feture-social ul li a .s-detail h5 {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--hf);
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.feature-bg .feature .feture-social ul li a .line {
+    width: 270px;
+    height: 1px;
+    background: var(--hc);
+    margin-top: 32px;
+    transition: all linear 0.3s;
+}
+
+.feature-bg .feature .feture-social ul li:hover .line {
+    background: var(--hvc);
+    width: 370px;
+}
+
+.feature-bg .feature .feture-gallery {
+    width: 370px;
+    float: left;
+    padding-top: 30px;
+}
+
+.feature-bg .feature .feture-gallery img {
+    padding-left: 55px;
+    padding-top: 30px;
+}
+
+.feature-bg .feature .feture-text {
+    width: 370px;
+    float: left;
+    padding-top: 30px;
+    text-align: right;
+}
+
+.feature-bg .feature .feture-text h3 {
+    font-family: var(--hf);
+    font-weight: 700px;
+    font-size: 18px;
+    color: var(--hc);
+    padding-top: 92px;
+}
+
+.feature-bg .feature .feture-text p {
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 14px;
+    color: var(--pc);
+}
+
+.feature-bg .feature .feture-text p:first-of-type {
+    padding-top: 30px;
+    padding-bottom: 26px;
+}
+
+/*feature css end here*/
+
+.screnshot-bg {
+    padding-top: 120px;
+}
+
+.screnshot-bg .screnshot .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.screnshot-bg .screnshot .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.screnshot-bg .screnshot .sub-heading .main-line-2 .line-1 span {
+    right: 45%
+}
+
+.screnshot-bg .screnshot .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.screnshot-bg .screnshot .sub-heading i {
+    left: 49.5%;
+}
+
+.screnshot-bg .screnshot .screenshot-photo {
+    width: 770px;
+    padding-top: 70px;
+    margin: 0 auto;
+
+}
+
+.screnshot-bg .screnshot .screenshot-photo img {
+    width: 100%;
+}
+
+.screnshot-bg .screnshot .screenshot-cricle {
+    text-align: center;
+}
+
+.screnshot-bg .screnshot .screenshot-cricle i {
+    margin-left: 5px;
+    transition: all linear 0.3s;
+}
+
+.screnshot-bg .screnshot .screenshot-cricle i:hover {
+    color: var(--hvc);
+}
+
+/*screenshot css end here*/
+
+.v-banner-bg {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.v-banner-bg .v-banner .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.v-banner-bg .v-banner .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.v-banner-bg .v-banner .sub-heading .main-line-2 .line-1 span {
+    right: 45%;
+}
+
+.v-banner-bg .v-banner .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.v-banner-bg .v-banner .sub-heading i {
+    left: 49.5%;
+}
+
+.v-banner-contain {
+    padding-top: 70px;
+}
+
+.v-banner-img {
+    background: url(../images/v-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.v-banner-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.v-banner-img .icon {
+    text-align: center;
+}
+
+.v-banner-img .icon i {
+    color: #fff;
+    font-size: 80px;
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+
+/*v-banner css end*/
+
+.plan-bg {
+    padding-top: 100px;
+}
+
+.plan-bg .plan .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.plan-bg .plan .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.plan-bg .plan .sub-heading .main-line-2 .line-1 span {
+    right: 45%;
+}
+
+.plan-bg .plan .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.plan-bg .plan .sub-heading i {
+    left: 49.5%;
+}
+
+
+.plan-bg .plan .plan-box {
+    width: 270px;
+    text-align: center;
+    padding-top: 70px;
+    float: left;
+    margin-right: 22px;
+}
+
+
+.plan-bg .plan .plan-box:last-of-type {
+    margin-right: 0px;
+}
+
+.plan-bg .plan .plan-box h3 {
+    text-transform: uppercase;
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--hc);
+    padding: 22px 70px;
+    background: var(--bc);
+    border: 1px solid var(--bc);
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    transition: all linear 0.3s;
+}
+
+.plan-bg .plan .plan-box:hover h3 {
+    background: var(--hvc);
+    color: #fff;
+    border-color: var(--hvc);
+}
+
+
+.plan-bg .plan .plan-box .circle {
+    width: 120px;
+    height: 120px;
+    margin-left: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--bc);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.plan-bg .plan .plan-box .circle h4 {
+    font-family: var(--hc);
+    font-weight: 700;
+    color: var(--hc);
+    padding-top: 10px;
+}
+
+.plan-bg .plan .plan-box .circle h4 span {
+    font-size: 50px;
+}
+
+.plan-bg .plan .plan-box .circle h5 {
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--pc);
+
+}
+
+.plan-bg .plan .plan-box p {
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pc);
+    line-height: 30px;
+    padding: 20px 0px 40px;
+    background: var(--bc);
+    border: 1px solid var(--bc);
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.plan-bg .plan .plan-box a {
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--hc);
+    background: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all linear 0.3s;
+}
+
+.plan-bg .plan .plan-box:hover a {
+    background: var(--hvc);
+    color: #fff;
+}
+
+.plan-bg .plan .problem-box h3 {
+    padding: 22px 40px;
+}
+
+/*plan css end here*/
+
+.team-bg {
+    padding-top: 70px;
+
+}
+
+.team-bg .team .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.team-bg .team .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.team-bg .team .sub-heading .main-line-2 .line-1 span {
+    right: 45%;
+}
+
+.team-bg .team .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.team-bg .team .sub-heading i {
+    left: 49.5%;
+}
+
+
+.team-bg .team .team-contain {
+    margin-top: 160px;
+    width: 370px;
+    text-align: center;
+    float: left;
+    transition: all linear 0.3s;
+}
+
+.team-bg .team .team-contain:hover {
+    margin-top: 70px;
+}
+
+.team-bg .team .team-contain .team-img {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.team-bg .team .team-contain .team-img .team-ovarly {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all linear 0.3s;
+}
+
+.team-bg .team .team-contain:hover .team-img .team-ovarly {
+    top: 0;
+}
+
+.team-bg .team .team-contain .team-img .team-ovarly ul {
+    padding-left: 100px;
+}
+
+.team-bg .team .team-contain .team-img .team-ovarly li {
+    float: left;
+    padding-top: 160px;
+    padding-right: 10px;
+}
+
+
+.team-bg .team .team-contain .team-img .team-ovarly li a i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: var(--hc);
+    font-size: 24px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 13px;
+    transition: all linear 0.3s;
+}
+
+
+.team-bg .team .team-contain .team-img .team-ovarly li:hover i {
+    background: #1da1f2;
+    border-color: #1da1f2;
+    color: #fff;
+}
+
+
+
+
+
+.team-bg .team .team-contain .team-img img {
+    width: 100%;
+}
+
+.team-bg .team .team-contain .team-text {
+    transition: all linear 0.3s;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.team-bg .team .team-contain:hover .team-text {
+    border-color: #cccccc;
+}
+
+.team-bg .team .team-contain .team-text h3 {
+    font-family: var(--hf);
+    flex-wrap: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 25px;
+    transition: all linear 0.3s;
+}
+
+
+.team-bg .team .team-contain:hover .team-text h3 {
+    color: var(--hc);
+}
+
+.team-bg .team .team-contain .team-text h4 {
+    font-family: var(--pf);
+    flex-wrap: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    transition: all linear 0.3s;
+}
+
+.team-bg .team .team-contain:hover .team-text h4 {
+    color: var(--hc);
+}
+
+.team-bg .team .team-contain .team-text p {
+    font-family: var(--pf);
+    flex-wrap: 400;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 61px 30px;
+    line-height: 20px;
+    transition: all linear 0.3s;
+}
+
+.team-bg .team .team-contain:hover .team-text p {
+    color: var(--pc);
+}
+
+/*tea, css end*/
+
+.feedback-bg {
+    padding-top: 100px;
+}
+
+.feedback-bg .feedback .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.feedback-bg .feedback .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.feedback-bg .feedback .sub-heading .main-line-2 .line-1 span {
+    right: 45%;
+}
+
+.feedback-bg .feedback .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.feedback-bg .feedback .sub-heading i {
+    left: 49.5%;
+}
+
+.f-banner-bg {
+    background: url(../images/f-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.f-banner-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.f-banner-bg .f-banner .f-banner-contain {
+    padding-top: 45px;
+    padding-left: 185px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text {
+    width: 800px;
+    background: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text .shap {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text p {
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pc);
+    line-height: 20px;
+    padding: 30px 63px 24px;
+}
+
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text ul {
+    padding-left: 10px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text li {
+    display: inline-block;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text li i {
+    font-size: 14px;
+    color: var(--hvc);
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text h3 {
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--hc);
+    text-transform: capitalize;
+    padding-top: 5px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-text h6 {
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pc);
+    padding-bottom: 25px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-img {
+    padding-left: 162px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-img img {
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+
+.f-banner-bg .f-banner .f-banner-contain .f-banner-img img:first-of-type {
+    padding-left: 0px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .icon {
+    text-align: center;
+    padding-right: 170px;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .icon i {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 6px;
+    padding-top: 23px;
+    padding-bottom: 43px;
+    transition: all linear 0.3s;
+}
+
+.f-banner-bg .f-banner .f-banner-contain .icon i:hover {
+    color: var(--hvc);
+}
+
+/*f-banner css end here*/
+
+.form-bg {
+    padding-top: 100px;
+}
+
+.form-bg .form .sub-heading .main-line-1 .line-1 span {
+    left: 45.4%;
+}
+
+.form-bg .form .sub-heading .main-line-1 .line-2 span {
+    left: 45%;
+}
+
+.form-bg .form .sub-heading .main-line-2 .line-1 span {
+    right: 45%;
+}
+
+.form-bg .form .sub-heading .main-line-2 .line-2 span {
+    right: 44.6%;
+}
+
+.form-bg .form .sub-heading i {
+    left: 49.5%;
+}
+
+.form-bg .form .form-contain {
+    padding-top: 70px;
+}
+
+.form-bg .form .form-contain form {
+    float: left;
+}
+
+
+.form-bg .form .form-contain form input {
+    width: 370px;
+    height: 40px;
+    border: 1px solid #718a71;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.form-bg .form .form-contain .form-text {
+    padding-top: 30px;
+}
+
+.form-bg .form .form-contain .form-text form {
+    padding-bottom: 35px;
+}
+
+.form-bg .form .form-contain .form-text form input {
+    width: 1170px;
+    height: 200px;
+    padding-bottom: 170px;
+    padding-left: 10px;
+}
+
+.form-bg .form .form-contain .btn {
+    text-align: center;
+}
+
+.form-bg .form .form-contain a {
+    background: var(--hvc);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+
+/*form css end*/
+
+.footer-bg {
+    margin-top: 100px;
+    background: var(--hc);
+}
+
+.footer-bg .footer .footer-img {
+    width: 228px;
+}
+
+.footer-bg .footer .footer-img img {
+    width: 100%;
+    padding-left: 470px;
+    padding-top: 30px;
+}
+
+.footer-bg .footer .icon {
+    text-align: center;
+}
+
+.footer-bg .footer .icon ul {
+    padding-left: 439px;
+}
+
+.footer-bg .footer .icon li {
+    float: left;
+    margin: 30px 10px 30px 0px;
+}
+
+.footer-bg .footer .icon li a i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    padding-top: 13px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: var(--hc);
+    transition: all linear 0.3s;
+
+}
+
+.footer-bg .footer .icon li:hover i {
+    color: #fff;
+    background: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.footer-bg .footer p {
+    text-align: center;
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.footer-bg .footer p span {
+    color: var(--hvc);
+}
